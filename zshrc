@@ -5,12 +5,17 @@
 omz="~/.oh-my-zsh"
 export ZSH="${omz/#\~/$HOME}"
 
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="blinks"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -167,44 +172,67 @@ zstyle ':zce:*' bg 'fg=3'
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'
 
-UNAME=$(uname | tr "[:upper:]" "[:lower:]")
-if [[ "$UNAME" == "linux" ]]; then
-  export NOCONDA_PATH="$PATH:/usr/local/cuda-10.0/bin"
-  export PATH="$NOCONDA_PATH:/home2/supasorn/anaconda3/bin"
+#UNAME=$(uname | tr "[:upper:]" "[:lower:]")
+#if [[ "$UNAME" == "linux" ]]; then
+  #export NOCONDA_PATH="$PATH:/usr/local/cuda-10.0/bin"
+  #export PATH="$NOCONDA_PATH:/home2/supasorn/anaconda3/bin"
+#
+  #export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-10.0/lib64:/usr/local/cuda/extras/CUPTI/lib64"
+#fi
+#
+#hn="$(hostname)"
+#if [[ $hn == "ROG504" ]]; then
+  #tf-term() {
+    #tmux new-session \; \
+    #send-keys "$@" C-m \; \
+    #send-keys "source ~/venv_tf2/bin/activate" C-m \; \
+    #split-window -v \; \
+    #send-keys "$@" C-m \; \
+    #send-keys "source ~/venv_tf2/bin/activate" C-m \; \
+    #send-keys "tensorboard --logdir=." C-m \; \
+    #split-window -v \; \
+    #send-keys "$@" C-m \; \
+  #}
+#
+  #tl-term() {
+    #tmux new-session \; \
+    #send-keys "/home2/; python remote_timelapse.py" C-m \; \
+    #split-window -h \; \
+    #send-keys "/home2; python timelapse_day_maker_runner.py" C-m \; \
+  #}
+#
+  #alias run="python /home2/research/orbiter/cluster_utils/tasklauncher.py"
+  #alias tm="python /home2/research/orbiter/cluster_utils/tasklauncher.py tm"
+  #alias rs="python /home2/research/orbiter/cluster_utils/rsync_folder.py"
+#
+#elif [[ $hn == "Supasorns-MacBook-Pro.local" ]]; then
+  ####-tns-completion-start-###
+  #if [ -f /Users/supasorn/.tnsrc ]; then 
+      #source /Users/supasorn/.tnsrc 
+  #fi
+  ####-tns-completion-end-###
+#fi
+#
+#
 
-  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-10.0/lib64:/usr/local/cuda/extras/CUPTI/lib64"
-fi
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-hn="$(hostname)"
-if [[ $hn == "ROG504" ]]; then
-  tf-term() {
-    tmux new-session \; \
-    send-keys "$@" C-m \; \
-    send-keys "source ~/venv_tf2/bin/activate" C-m \; \
-    split-window -v \; \
-    send-keys "$@" C-m \; \
-    send-keys "source ~/venv_tf2/bin/activate" C-m \; \
-    send-keys "tensorboard --logdir=." C-m \; \
-    split-window -v \; \
-    send-keys "$@" C-m \; \
-  }
+# export PATH="~/miniconda3/bin:$PATH"  # commented out by conda initialize
 
-  tl-term() {
-    tmux new-session \; \
-    send-keys "/home2/; python remote_timelapse.py" C-m \; \
-    split-window -h \; \
-    send-keys "/home2; python timelapse_day_maker_runner.py" C-m \; \
-  }
 
-  alias run="python /home2/research/orbiter/cluster_utils/tasklauncher.py"
-  alias tm="python /home2/research/orbiter/cluster_utils/tasklauncher.py tm"
-  alias rs="python /home2/research/orbiter/cluster_utils/rsync_folder.py"
-
-elif [[ $hn == "Supasorns-MacBook-Pro.local" ]]; then
-  ###-tns-completion-start-###
-  if [ -f /Users/supasorn/.tnsrc ]; then 
-      source /Users/supasorn/.tnsrc 
-  fi
-  ###-tns-completion-end-###
-fi
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/home/tan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/tan/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/tan/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/tan/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
 
