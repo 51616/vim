@@ -86,7 +86,10 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 set background=dark
-colorscheme gruvbox
+colorscheme brogrammer
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
 
 autocmd GUIEnter * set visualbell t_vb=
 

@@ -172,6 +172,12 @@ zstyle ':zce:*' bg 'fg=3'
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'
 
+_fix_cursor() {
+   echo -ne '\e[5 q'
+}
+
+precmd_functions+=(_fix_cursor)
+
 #UNAME=$(uname | tr "[:upper:]" "[:lower:]")
 #if [[ "$UNAME" == "linux" ]]; then
   #export NOCONDA_PATH="$PATH:/usr/local/cuda-10.0/bin"
