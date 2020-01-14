@@ -3,7 +3,7 @@
 ln -sf ~/.vim/vimrc ~/.vimrc
 ln -sf ~/.vim/gvimrc ~/.gvimrc
 ln -sf ~/.vim/tmux.conf ~/.tmux.conf
-ln -sf ~/.vim/tmux_scipt.sh ~/tmux_scipt.sh
+ln -sf ~/.vim/tmux_script.sh ~/tmux_script.sh
 ln -sf ~/.vim/.bash_aliases ~/.bash_aliases
 ln -sf ~/.vim/zshrc ~/.zshrc
 
