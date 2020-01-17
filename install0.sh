@@ -3,7 +3,8 @@
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:x4121/ripgrep
 sudo apt-get update
-sudo apt install neovim vim zsh tmux curl ripgrep -y
+sudo apt install neovim vim zsh tmux curl  -y
+#ripgrep
 
 #git clone https://github.com/supasorn/vim.git ~/.vim
 #wget https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/colors/brogrammer.vim ~/.vim/colors/brogrammer.vim
