@@ -1,5 +1,5 @@
 tmux new-session -d 'watch nvidia-smi'
-tmux split-window -h -p 75 \; send-keys 'gotop' C-m
+tmux split-window -h -p 75 \; send-keys 'htop' C-m
 tmux split-window -v
 tmux select-pane -t 0
 tmux split-window -v \; send-keys 'conda activate lg' C-m \; send-keys 'clear' C-m
