@@ -165,7 +165,9 @@ source-git https://github.com/changyuheng/zsh-interactive-cd.git
 source-git https://github.com/zsh-users/zsh-autosuggestions.git 
 source-git https://github.com/hchbaw/zce.zsh.git
 
-bindkey '^[[Z' autosuggest-accept
+#bindkey '^[[Z' autosuggest-accept 
+#ctrl+space 
+bindkey '^ ' autosuggest-accept
 bindkey '^f' zce
 
 zstyle ':zce:*' bg 'fg=3'
