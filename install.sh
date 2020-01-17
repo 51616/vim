@@ -6,6 +6,7 @@ ln -sf ~/.vim/tmux.conf ~/.tmux.conf
 ln -sf ~/.vim/tmux_script.sh ~/tmux_script.sh
 ln -sf ~/.vim/.bash_aliases ~/.bash_aliases
 ln -sf ~/.vim/zshrc ~/.zshrc
+ln -sf ~/.vim/p10k.zsh ~/.p10k.zsh
 
 mkdir -p ~/.config/nvim
 cp ~/.vim/init.vim ~/.config/nvim/init.vim
