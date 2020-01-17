@@ -220,8 +220,8 @@ inoremap <expr><C-k> neocomplcache#close_popup()
 
 noremap Y y$
 vnoremap y y`>
-nnoremap j gj
-nnoremap k gk
+nnoremap j gk
+nnoremap k gj
 
 nnoremap =<SPACE> i <ESC>la <ESC>h
 
