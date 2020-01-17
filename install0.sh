@@ -6,8 +6,7 @@ sudo apt-get update
 sudo apt install neovim vim zsh tmux curl ripgrep -y
 
 #git clone https://github.com/supasorn/vim.git ~/.vim
-
-wget https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/colors/brogrammer.vim ~/.vim/colors/brogrammer.vim
+#wget https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/colors/brogrammer.vim ~/.vim/colors/brogrammer.vim
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh) --unattended"
 sh ~/.vim/install.sh
