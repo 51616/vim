@@ -2,9 +2,9 @@
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/supasorn/vim/master/install0.sh)
 
 sudo apt install software-properties-common -y
-# sudo add-apt-repository ppa:x4121/ripgrep
+sudo add-apt-repository ppa:x4121/ripgrep
 sudo apt-get update
-sudo apt install neovim vim zsh tmux curl -y #ripgrep
+sudo apt install neovim vim zsh tmux curl ripgrep -y 
 
 #git clone https://github.com/supasorn/vim.git ~/.vim
 #wget https://raw.githubusercontent.com/marciomazza/vim-brogrammer-theme/master/colors/brogrammer.vim ~/.vim/colors/brogrammer.vim
