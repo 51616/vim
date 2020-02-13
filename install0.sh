@@ -3,6 +3,7 @@
 
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:x4121/ripgrep
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt install neovim vim zsh tmux curl ripgrep htop sshfs -y 
 
