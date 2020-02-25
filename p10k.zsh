@@ -75,7 +75,7 @@
       # battery               # internal battery
       # example               # example user-defined segment (see prompt_example function below)
   )
-
+  POWERLEVEL9K_INSTANT_PROMPT=quiet
   # Basic style options that define the overall look of your prompt. You probably don't want to
   # change them.
   typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
