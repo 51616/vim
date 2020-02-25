@@ -13,6 +13,10 @@ sudo apt install neovim vim zsh tmux curl ripgrep htop sshfs -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh) --unattended"
 sh ~/.vim/install.sh
 
+sudo mkdir /usr/share/fonts/truetype/Meslo
+sudo mv Meslo/*.ttf /usr/share/fonts/truetype/Meslo
+sudo fc-cache -fv
+
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 chsh -s /usr/bin/zsh
 # download 10k theme
