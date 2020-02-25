@@ -81,6 +81,8 @@ plugins=(
   z
   fzf
   extract
+  colored-man-pages
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
