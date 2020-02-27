@@ -443,7 +443,7 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm -[f,r] *' 'fg=red,bold,standout')
 ZSH_HIGHLIGHT_PATTERNS+=('rm -[f,r][f,r] *' 'fg=red,bold,standout')
 ZSH_HIGHLIGHT_PATTERNS+=('sudo dd *' 'fg=magenta,bold,standout')
 ZSH_HIGHLIGHT_PATTERNS+=('sudo shred *' 'fg=magenta,bold,standout')
-
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'
 
 # -------------------------------------------------------------------------------------------------
 # Setup
