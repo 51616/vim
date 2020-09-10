@@ -21,7 +21,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/cust
 rm ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 cp ~/.vim/zsh-syntax-highlighting.zsh ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+# too agressive
+# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 chsh -s /usr/bin/zsh
 # download 10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
